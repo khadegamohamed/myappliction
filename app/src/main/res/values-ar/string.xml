@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="my_library">مكتبتى</string>
+    <string name="my_subjects">موادى</string>
+    <string name="my_cources">كورساتى</string>
+    <string name="my_table">جدولى</string>
+    <string name="my_alarm">تنبيه</string>
+    <string name="my_encourage">تحفيز</string>
+    <string name="my_subject">موادى</string>
+
+</resources>
