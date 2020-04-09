@@ -21,7 +21,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:background="@drawable/shape2"
-        android:text="Button" />
+        android:text="videos" />
 
     <Button
         android:id="@+id/encourage_btn_image"
@@ -29,7 +29,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:background="@drawable/shape2"
-        android:text="Button" />
+        android:text="images" />
 
     <Button
         android:id="@+id/encourage_btn_"
@@ -37,14 +37,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:background="@drawable/shape2"
-        android:text="Button" />
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:clickable="true"
-        app:srcCompat="@android:drawable/ic_input_add" />
+        android:text="Quots" />
 
 </LinearLayout>
