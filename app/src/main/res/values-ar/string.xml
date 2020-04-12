@@ -7,5 +7,8 @@
     <string name="my_alarm">تنبيه</string>
     <string name="my_encourage">تحفيز</string>
     <string name="my_subject">موادى</string>
+    <string name="videos">فيديوهات</string>
+    <string name="images">صور</string>
+    <string name="Quots">كتابات</string>
 
 </resources>
