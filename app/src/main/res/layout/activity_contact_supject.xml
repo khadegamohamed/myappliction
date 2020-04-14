@@ -8,13 +8,14 @@
     android:orientation="vertical">
 
 
-    \\text for supject 's name
+    \\text for supject's name
+
     <TextView
+        android:id="@+id/text_sub"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="60sp"
-
-        />
+        android:textColor="#3364C6"
+        android:textSize="60sp" />
 
     <Button
         android:id="@+id/lec_bt"
@@ -24,7 +25,7 @@
         android:layout_marginTop="150dp"
         android:background="@drawable/lec2"
         android:text="@string/lecture"
-        android:textSize="50sp" />
+        android:textSize="30sp" />
 
     <Button
         android:id="@+id/sheet_but"
@@ -32,7 +33,7 @@
         android:layout_height="wrap_content"
         android:text="@string/sheet"
 android:background="@drawable/lec2"
-        android:textSize="50sp"
+        android:textSize="30sp"
         android:layout_marginBottom="100dp"/>
 
     <Button
@@ -41,5 +42,5 @@ android:background="@drawable/lec2"
         android:layout_height="wrap_content"
         android:text="@string/vedioes"
         android:background="@drawable/lec2"
-        android:textSize="50sp" />
+        android:textSize="30sp" />
 </LinearLayout>
