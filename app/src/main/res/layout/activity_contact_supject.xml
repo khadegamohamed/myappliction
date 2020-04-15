@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".contact_supject"
+    android:background="@color/color_backGround"
     android:orientation="vertical"
-    android:background="#E8F8F8"
-  >
+    tools:context=".contact_supject">
 
 
     \\text for supject's name
@@ -16,35 +16,47 @@
         android:id="@+id/text_sub"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:drawableLeft="@android:drawable/btn_star_big_on"
         android:textColor="#3364C6"
-        android:textSize="60sp"
-       android:drawableLeft="@drawable/ic_my_book2"
-        />
 
-    <Button
-        android:id="@+id/lec_bt"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="100dp"
-        android:layout_marginTop="150dp"
-        android:background="@drawable/lec2"
-        android:text="@string/lectures"
-        android:textSize="30sp" />
+        android:textSize="60sp" />
 
-    <Button
-        android:id="@+id/sheet_bt"
-        android:layout_width="250dp"
+    <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/sheets"
-android:background="@drawable/lec2"
-        android:textSize="30sp"
-        android:layout_marginBottom="100dp"/>
+        android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/vidios_bt"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:text="@string/vedioes"
-        android:background="@drawable/lec2"
-        android:textSize="30sp" />
+        <Button
+            android:id="@+id/lec_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@color/color_backGround"
+            android:drawableTop="@drawable/ic_my_book2"
+            android:text="@string/lccture" />
+
+        <Button
+            android:id="@+id/sheet_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:background="@color/color_backGround"
+            android:drawableTop="@drawable/sheet"
+            android:text="sheetes" />
+
+        <Button
+            android:id="@+id/ved_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:background="@color/color_backGround"
+            android:drawableTop="@drawable/vedioes"
+            android:text=" vedioes" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
 </LinearLayout>
