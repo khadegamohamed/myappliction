@@ -4,28 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".subject_activity">
+    tools:context=".lecture"
+    android:orientation="vertical">
 
     <TextView
-        android:id="@+id/subject_tv"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:gravity="center"
-        android:text="@string/my_subject"
-        android:textSize="35sp" />
+        android:layout_height="wrap_content"
+       android:background="#03DAC5"
+        android:text="@string/lectures"
+        android:textSize="50sp"
+        android:drawableStart="@drawable/bock1"
+        tools:ignore="PrivateResource"
+        />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/subject_recycler"
+        android:id="@+id/lec_rec"
         android:layout_width="match_parent"
-        android:layout_height="600dp" />
+        android:layout_height="wrap_content" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/sub_fl_bt"
-        android:layout_width="wrap_content"
+        android:id="@+id/lec_fl_bt"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:alpha="1.0.0"
         android:clickable="true"
         android:focusable="true"
         app:srcCompat="@android:drawable/ic_input_add" />
+
 
 </LinearLayout>

@@ -4,28 +4,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".subject_activity">
+    tools:context=".sheets"
+    android:orientation="vertical">
 
     <TextView
-        android:id="@+id/subject_tv"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:gravity="center"
-        android:text="@string/my_subject"
-        android:textSize="35sp" />
+        android:layout_height="wrap_content"
+        android:background="#03DAC5"
+       android:drawableStart="@drawable/sheet"
+        android:text="@string/sheets"
+
+        android:textSize="50sp" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/subject_recycler"
+        android:id="@+id/sh_rec"
         android:layout_width="match_parent"
-        android:layout_height="600dp" />
+        android:layout_height="wrap_content" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/sub_fl_bt"
-        android:layout_width="wrap_content"
+        android:id="@+id/floatingActionButton"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:clickable="true"
-        android:focusable="true"
-        app:srcCompat="@android:drawable/ic_input_add" />
+        android:focusableInTouchMode="false"
+        app:srcCompat="@android:drawable/ic_input_add"
+        android:focusable="true" />
 
 </LinearLayout>

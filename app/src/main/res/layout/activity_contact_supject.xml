@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".contact_supject"
+    android:orientation="vertical">
+
+
+    \\text for supject's name
+
+    <TextView
+        android:id="@+id/text_sub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#3364C6"
+        android:textSize="60sp" />
+
+    <Button
+        android:id="@+id/lec_bt"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/lec2"
+        android:text="@string/lecture"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/sheet_but"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="@string/sheet"
+android:background="@drawable/lec2"
+        android:textSize="30sp"
+        android:layout_marginBottom="100dp"/>
+
+    <Button
+        android:id="@+id/vidios_bt"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="@string/vedioes"
+        android:background="@drawable/lec2"
+        android:textSize="30sp" />
+</LinearLayout>
