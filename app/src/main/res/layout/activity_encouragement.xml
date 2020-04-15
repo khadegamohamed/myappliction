@@ -17,12 +17,14 @@
         android:id="@+id/encourage_tv"
         android:layout_width="match_parent"
         android:layout_height="150dp"
+        android:layout_marginLeft="230dp"
         android:gravity="center"
         android:paddingStart="20dp"
         android:text="@string/my_encourage"
         android:textAlignment="center"
         android:textColor="@color/colorPrimary"
         android:textSize="60dp"
+        android:textStyle="bold|italic"
         app:autoSizeTextType="none" />
 
     <Button
