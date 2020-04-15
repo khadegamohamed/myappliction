@@ -10,17 +10,17 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-       android:background="#03DAC5"
+       android:background="@drawable/shape"
         android:text="@string/lectures"
         android:textSize="50sp"
         android:drawableStart="@drawable/bock1"
         tools:ignore="PrivateResource"
-        />
+     android:paddingStart="60sp" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/lec_rec"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="600dp" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/lec_fl_bt"

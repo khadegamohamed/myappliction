@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_name" />
-    <string name="lecture">lecture</string>
-    <string name="sheet">sheet</string>
-    <string name="vedioes">vedioes</string>
-    <string name="lectures">lectures</string>
-    <string name="sheets">sheets</string>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" translatable="false" />
+    <string name="lecture" translatable="false">lecture</string>
+    <string name="sheet" translatable="false">sheet</string>
+    <string name="vedioes" translatable="false">vedioes</string>
+    <string name="lectures" translatable="false">lectures</string>
+    <string name="sheets" translatable="false">sheets</string>
 </resources>
