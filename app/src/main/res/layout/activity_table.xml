@@ -8,23 +8,33 @@
     tools:context=".Table">
 
     <TextView
-        android:id="@+id/table_tv"
         android:layout_width="match_parent"
         android:layout_height="60dp"
+        android:background="@drawable/shape"
         android:gravity="center"
-        android:text="@string/my_table"
+        android:text="@string/lecture_table"
+        android:textColor="@android:color/black"
         android:textSize="36sp" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/table_rv"
+        android:id="@+id/lec_rec_table"
         android:layout_width="match_parent"
-        android:layout_height="600dp" />
+        android:layout_height="0dp"
+        android:layout_weight="1" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton"
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        app:srcCompat="@android:drawable/ic_input_add"
-        android:focusable="true" />
+        android:layout_height="60dp"
+        android:background="@drawable/shape"
+        android:gravity="center"
+        android:text="@string/exam_table"
+        android:textColor="@android:color/black"
+        android:textSize="36sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Exam_rec_table"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
 </LinearLayout>

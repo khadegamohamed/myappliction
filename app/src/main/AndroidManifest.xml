@@ -9,9 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".sheets"></activity>
+        <activity android:name=".sub__contact"></activity>
+        <activity
+            android:name=".sub_contact"
+            android:label="@string/title_activity_sub_contact"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".sheets" />
         <activity android:name=".vedioes" />
-        <activity android:name=".lecture" />
+        <activity android:name=".Lecture" />
         <activity android:name=".contact_supject" />
         <activity android:name=".moving_encouragement" />
         <activity android:name=".Table" />

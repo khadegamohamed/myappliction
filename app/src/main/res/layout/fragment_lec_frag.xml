@@ -1,39 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".vedioes_frag">
+
+    tools:context=".lec_frag">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/color_backGround"
         android:orientation="vertical">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/shape"
-            android:drawableStart="@drawable/vedioes"
-            android:text="@string/vedioes"
-            android:textSize="50sp"
-
-            />
-
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/vedio_rec"
+            android:id="@+id/rec_lec"
             android:layout_width="match_parent"
-            android:layout_height="600dp" />
+            android:layout_height="650dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/vedio_ft_bt"
+            android:id="@+id/fl_bt_frag"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:baselineAlignBottom="false"
             android:clickable="true"
-            android:focusable="true"
-            app:srcCompat="@android:drawable/ic_input_add" />
-
+            android:src="@drawable/add" />
     </LinearLayout>
+
+
 </FrameLayout>

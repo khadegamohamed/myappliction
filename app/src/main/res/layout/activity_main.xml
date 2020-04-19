@@ -12,9 +12,8 @@
 
         android:layout_width="match_parent"
         android:layout_height="240dp"
-        android:drawableLeft="@drawable/ic_my_book"
+        android:drawableStart="@drawable/ic_my_book"
         android:gravity="center"
-        android:paddingLeft="40dp"
         android:shadowDx="2dp"
         android:shadowDy="2dp"
         android:text="@string/my_library"
@@ -92,7 +91,8 @@ android:layout_marginRight="20dp"
         android:layout_below="@id/main_btn_alarm"
         android:layout_marginStart="20dp"
         android:layout_marginTop="30dp"
-        app:srcCompat="@drawable/ic_leadership" />
+        app:srcCompat="@drawable/ic_leadership"
+        android:contentDescription="@string/todo" />
 
 
 </RelativeLayout>
