@@ -1,33 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".sub_contact"
     android:orientation="vertical">
+<com.google.android.material.appbar.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<com.google.android.material.appbar.CollapsingToolbarLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" >
+
 
         <ImageView
             android:id="@+id/img_back"
-            android:layout_width="wrap_content"
+            android:layout_width="30dp"
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/ic_left_arrow" />
-
         <TextView
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="40dp"
             android:background="@drawable/shape"
+            android:paddingStart="100dp"
             android:text="logic"
             android:textColor="@android:color/black"
-            android:textSize="40sp"
-            android:paddingStart="100dp"/>
-    </LinearLayout>
+            android:textSize="40sp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+</com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/main_tab"
@@ -60,11 +76,12 @@
             android:layout_height="wrap_content"
             android:text="lectures" />
     </com.google.android.material.tabs.TabLayout>
+</com.google.android.material.appbar.AppBarLayout>
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/view_pager"
         android:layout_width="409dp"
-        android:layout_height="681dp"
+        android:layout_height="719dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -72,4 +89,4 @@
 
     </androidx.viewpager.widget.ViewPager>
 
-</LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
