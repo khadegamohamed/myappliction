@@ -65,4 +65,5 @@ public class lec_frag extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         RecyclerView recyclerView=view.findViewById(R.id.rec_lec);
     }
+
 }

@@ -3,21 +3,24 @@ package com.example.theproject22;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
 
 import com.google.android.material.tabs.TabLayout;
 
 public class sub_contact extends AppCompatActivity {
 TabLayout tabLayout;
 ViewPager viewPager;
-
+    ImageView img;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sub_contact);
         tabLayout=findViewById(R.id.main_tab);
         viewPager=findViewById(R.id.view_pager);
-
+        img=findViewById(R.id.img_back);
         Pager_Adater adapter=new Pager_Adater(getSupportFragmentManager());
          adapter.addTab(new MyTab("lectures",lec_frag.newInstance(1,"lecturs")));
 
@@ -55,6 +58,13 @@ ViewPager viewPager;
             @Override
             public void onPageScrollStateChanged(int state) {
 
+            }
+        });
+        img.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i= new Intent(sub_contact.this,subject_activity.class);
+                startActivity(i);
             }
         });
     }

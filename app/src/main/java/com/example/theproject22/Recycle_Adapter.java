@@ -12,10 +12,10 @@ import java.util.ArrayList;
 import java.util.Objects;
 
 public class Recycle_Adapter extends RecyclerView.Adapter <Recycle_Adapter.ViewHolder>{
-    ArrayList<String> lectures;
+    ArrayList<Name> lectures;
 Recycle_listner listner;
-
-    public Recycle_Adapter(ArrayList<String> lectures, Recycle_listner listner) {
+Name name;
+    public Recycle_Adapter(ArrayList<Name> lectures, Recycle_listner listner) {
         this.lectures = lectures;
         this.listner = listner;
     }
@@ -30,8 +30,8 @@ Recycle_listner listner;
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-
-         holder.lec_name.setText(lectures.get(position));
+         name=lectures.get(position);
+         holder.lec_name.setText(name.getName());
     }
 
     @Override
@@ -45,7 +45,15 @@ Recycle_listner listner;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             lec_name=itemView.findViewById(R.id.lec_name_layout);
-            itemView
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                listner.onRecyclerListner(name);
+
+
+                }
+
+            });
         }
     }
 }

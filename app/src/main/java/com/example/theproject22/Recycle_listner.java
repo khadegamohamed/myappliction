@@ -1,5 +1,7 @@
 package com.example.theproject22;
 
 public interface Recycle_listner {
-    public void onClicklistner();
+   public void onRecyclerListner(Name name);
+
+   void onClicklistner(Name name);
 }
