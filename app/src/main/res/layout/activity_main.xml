@@ -14,8 +14,8 @@
         android:layout_height="240dp"
         android:drawableStart="@drawable/ic_my_book"
         android:gravity="center"
-        android:shadowDx="2dp"
-        android:shadowDy="2dp"
+        android:shadowDy="40"
+
         android:text="@string/my_library"
         android:textColor="@color/color_button"
         android:textSize="60sp" />
@@ -33,56 +33,56 @@
         android:shadowDx="2"
         android:shadowDy="2"
         android:text="@string/my_subjects"
-        android:textColor="@color/white"
+        android:textColor="@android:color/black"
         android:textSize="40sp" />
 
     <Button
         android:id="@+id/main_btn_cources"
         android:layout_width="match_parent"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp"
         android:layout_height="70dp"
         android:layout_below="@+id/main_btn_subject"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
         android:background="@drawable/shape"
-        android:text="@string/my_cources"
-        android:textColor="@color/white"
-        android:textSize="40sp"
         android:shadowColor="@color/color_text"
         android:shadowDx="2"
-        android:shadowDy="2"/>
+        android:shadowDy="2"
+        android:text="@string/my_cources"
+        android:textColor="@android:color/black"
+        android:textSize="40sp" />
 
     <Button
         android:id="@+id/main_btn_tables"
-        android:layout_below="@+id/main_btn_cources"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:background="@drawable/shape"
+        android:layout_below="@+id/main_btn_cources"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp"
-        android:text="@string/my_table"
-        android:textColor="@color/white"
-        android:textSize="40sp"
+        android:background="@drawable/shape"
         android:shadowColor="@color/color_text"
         android:shadowDx="2"
-        android:shadowDy="2"/>
+        android:shadowDy="2"
+        android:text="@string/my_table"
+        android:textColor="@android:color/black"
+        android:textSize="40sp" />
 
     <Button
         android:id="@+id/main_btn_alarm"
         android:layout_width="match_parent"
-        android:layout_below="@+id/main_btn_tables"
         android:layout_height="70dp"
-        android:background="@drawable/shape"
-        android:layout_marginTop="20dp"
-android:layout_marginRight="20dp"
+        android:layout_below="@+id/main_btn_tables"
         android:layout_marginLeft="20dp"
-        android:text="@string/my_alarm"
-        android:textColor="@color/white"
-        android:textSize="40sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/shape"
         android:shadowColor="@color/color_text"
         android:shadowDx="2"
-        android:shadowDy="2"/>
+        android:shadowDy="2"
+        android:text="@string/my_alarm"
+        android:textColor="@android:color/black"
+        android:textSize="40sp" />
 
     <ImageView
         android:id="@+id/main_img_alarm"
