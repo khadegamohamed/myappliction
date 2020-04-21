@@ -29,11 +29,8 @@
         android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"
         android:background="@drawable/shape"
-        android:shadowColor="@color/color_text"
-        android:shadowDx="2"
-        android:shadowDy="2"
         android:text="@string/my_subjects"
-        android:textColor="@android:color/black"
+        android:textColor="@color/white"
         android:textSize="40sp" />
 
     <Button
@@ -45,11 +42,8 @@
         android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"
         android:background="@drawable/shape"
-        android:shadowColor="@color/color_text"
-        android:shadowDx="2"
-        android:shadowDy="2"
         android:text="@string/my_cources"
-        android:textColor="@android:color/black"
+        android:textColor="@color/white"
         android:textSize="40sp" />
 
     <Button
@@ -65,7 +59,7 @@
         android:shadowDx="2"
         android:shadowDy="2"
         android:text="@string/my_table"
-        android:textColor="@android:color/black"
+        android:textColor="@color/white"
         android:textSize="40sp" />
 
     <Button
@@ -81,7 +75,7 @@
         android:shadowDx="2"
         android:shadowDy="2"
         android:text="@string/my_alarm"
-        android:textColor="@android:color/black"
+        android:textColor="@color/white"
         android:textSize="40sp" />
 
     <ImageView

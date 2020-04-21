@@ -26,7 +26,9 @@ Recycle_Adapter adapter =new Recycle_Adapter(subjects, new Recycle_listner() {
     }
 
     @Override
-    public void onClicklistner() {
+    public void onClicklistner(Name name1) {
+        Intent i=new Intent(subject_activity.this,sub_contact.class);
+        startActivity(i);
 
     }
 });

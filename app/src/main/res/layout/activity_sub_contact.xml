@@ -18,9 +18,9 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
+        android:background="@color/color_backGround"
         android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme" >
+        android:theme="?attr/actionBarTheme">
 
 
         <ImageView
@@ -28,6 +28,7 @@
             android:layout_width="30dp"
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/ic_left_arrow" />
+
         <TextView
             android:layout_width="300dp"
             android:layout_height="wrap_content"
@@ -35,7 +36,7 @@
             android:background="@drawable/shape"
             android:paddingStart="100dp"
             android:text="logic"
-            android:textColor="@android:color/black"
+            android:textColor="@color/white"
             android:textSize="40sp" />
 
     </androidx.appcompat.widget.Toolbar>
