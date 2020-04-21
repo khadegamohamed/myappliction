@@ -12,6 +12,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import java.util.ArrayList;
+
 
 /**
  * A simple {@link Fragment} subclass.
@@ -23,6 +25,8 @@ public class lec_frag extends Fragment {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_ID = "id";
     private static final String ARG_NAME = "name";
+   RecyclerView recycle;
+    ArrayList<Name> subjects=new ArrayList<>();
 
     // TODO: Rename and change types of parameters
     private int id;
