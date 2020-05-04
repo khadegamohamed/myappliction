@@ -1,0 +1,10 @@
+JvmtiExport can_access_local_variables 0
+JvmtiExport can_hotswap_or_post_breakpoint 0
+JvmtiExport can_post_on_exceptions 0
+# 226 ciObject found
+instanceKlass com/android/ide/common/blame/SourceFile
+instanceKlass com/android/ide/common/blame/Message$Kind$Companion
+instanceKlass com/google/common/collect/ForwardingObject
+instanceKlass com/android/build/gradle/internal/errors/MessageReceiverImpl
+instanceKlass kotlin/collections/EmptySet
+instanceKlass kotlin/jvm/internal/markers/KMappedMarker

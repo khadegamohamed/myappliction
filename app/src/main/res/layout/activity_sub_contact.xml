@@ -30,12 +30,10 @@
             app:srcCompat="@drawable/ic_left_arrow" />
 
         <TextView
+            android:id="@+id/txt_nam_sub"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
             android:background="@drawable/shape"
-            android:paddingStart="100dp"
-            android:text="logic"
             android:textColor="@color/white"
             android:textSize="40sp" />
 
@@ -63,13 +61,13 @@
             android:id="@+id/vid_tab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="vidioes" />
+            android:text="videoes" />
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/sh_tab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="sheetes" />
+            android:text="sheets" />
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/lec_tap"

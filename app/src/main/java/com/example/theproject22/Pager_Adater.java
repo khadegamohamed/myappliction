@@ -11,6 +11,7 @@ import java.util.ArrayList;
 public class Pager_Adater extends FragmentStatePagerAdapter {
 ArrayList<MyTab>tabs=new ArrayList<>();
 
+
     public Pager_Adater( FragmentManager fm) {
         super(fm);
     }
@@ -18,16 +19,19 @@ ArrayList<MyTab>tabs=new ArrayList<>();
     @NonNull
     @Override
     public Fragment getItem(int position) {
+
         return tabs.get(position).getFragment();
     }
 
     @Nullable
     @Override
     public CharSequence getPageTitle(int position) {
+
         return tabs.get(position).getTab_name();
     }
 public void addTab (MyTab tab){
-tabs.add(tab);
+
+        tabs.add(tab);
 }
     @Override
     public int getCount() {

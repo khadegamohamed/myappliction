@@ -31,7 +31,7 @@ Name name;
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
          name=lectures.get(position);
-         holder.lec_name.setText(name.getName());
+         holder.lec_name.setText(name.getSub_name());
     }
 
     @Override
